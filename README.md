@@ -1,27 +1,41 @@
-# React + TypeScript + Vite
+# react-mini-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+react-mini-app is a simple Telegram Mini App built with ReactJS + TypeScript + Vite and uses the RippleUI library +
+TailwindCSS for UI components.
+It's intended to be used as a template for creating new Telegram Mini Apps using ReactJS and TailwindCSS.
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To set up the project, run the following commands:
 
-## Expanding the ESLint configuration
+#### Install dependencies:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```bash
+npm install
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### Start the development server:
+
+```bash
+npm run dev
+
+```
+
+## Features
+
+- Integrates in real time with the Telegram WebApp data
+  through [@vkruglikov/react-telegram-web-app](https://github.com/vkruglikov/react-telegram-web-app)
+- Uses Tailwind CSS for responsive and customizable UI components
+- Has a simple and intuitive UI
+- Adapts in real time to the theme parameters received from Telegram
+- Has a customized generator for components, pages and ui-components
+
+## Contributing
+
+Contributions are welcome! If you have any ideas or improvements for the project, feel free to open an issue or submit a
+pull request.
+
+## License
+
+This project is licensed under the MIT license. See the LICENSE file for more information.
