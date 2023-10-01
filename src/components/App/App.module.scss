@@ -1,0 +1,23 @@
+.App {
+  @apply flex w-full flex-col items-center justify-center gap-2 text-center;
+
+  .title {
+    @apply text-2xl font-bold;
+  }
+
+  .githubLink {
+    @apply link text-link;
+
+    &:hover {
+      @apply underline text-link;
+    }
+  }
+
+  .clickMe {
+    @apply btn btn-solid-primary bg-button text-buttonText;
+
+    &:hover {
+      @apply brightness-110 bg-button;
+    }
+  }
+}
