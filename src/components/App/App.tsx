@@ -17,17 +17,19 @@ export const App: React.FC<AppProps> = ({ className }) => {
 
   return (
     <div className={clsx(styles.App, className)}>
-      <a
-        href="https://github.com/usernein/react-mini-app"
-        target="_blank"
-        className={styles.githubLink}
-      >
-        <h1 className={styles.title}>react-mini-app</h1>
-      </a>
+      <div className={styles.container}>
+        <a
+          href="https://github.com/usernein/react-mini-app"
+          target="_blank"
+          className={styles.githubLink}
+        >
+          <h1 className={styles.title}>react-mini-app</h1>
+        </a>
 
-      <button onClick={showPopupOnClick} className={styles.clickMe}>
-        Show popup!
-      </button>
+        <button onClick={showPopupOnClick} className={styles.clickMe}>
+          Show popup!
+        </button>
+      </div>
     </div>
   );
 };

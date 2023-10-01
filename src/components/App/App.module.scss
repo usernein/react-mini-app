@@ -1,5 +1,13 @@
 .App {
-  @apply flex w-full flex-col items-center justify-center gap-2 text-center;
+  @apply flex w-full flex-col items-center justify-center;
+
+  .container {
+    @apply flex flex-col items-center justify-center gap-4 bg-secondaryBg rounded-lg p-10 duration-300;
+
+    &:hover {
+      @apply shadow-md shadow-button
+    }
+  }
 
   .title {
     @apply text-2xl font-bold;
@@ -14,7 +22,7 @@
   }
 
   .clickMe {
-    @apply btn btn-solid-primary bg-button text-buttonText;
+    @apply btn btn-sm btn-solid-primary bg-button text-buttonText;
 
     &:hover {
       @apply brightness-110 bg-button;
